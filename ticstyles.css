@@ -141,5 +141,14 @@ h1 {
     left: 67%;
 }
 
+@media (max-width: 360px){
+    body {
+        position: absolute;
+        top: -20%;
+        left: -30% ;
+        margin: auto;
+        padding: 10px;
+        transform: scale(0.6)
+    }
 
 }
