@@ -1,0 +1,132 @@
+body {
+    background-color: orange;
+}
+
+#intro{
+    text-align: center;
+    height: 200px;
+}
+
+h1 {
+    font-size: xxx-large;
+}
+
+#out {
+    font-size: xx-large;
+}
+
+
+
+#grid {
+    margin: auto;
+    position: relative;
+    width: 600px;
+    height: 600px;
+    border: 4px solid;
+}
+
+#vline {
+    position: absolute;
+    width: 20px;
+    height: 510px;
+    background-color: black;
+    border-radius: 50px;
+}
+
+#hline {
+    position: absolute;
+    width: 20px;
+    height: 550px;
+    background-color: black;
+    border-radius: 50px;
+    rotate: 90deg;
+}
+
+.left {
+    top: 50%;
+    left: 32%;
+    transform: translate(-50%,-50%);
+}
+
+.right {
+    
+    top: 50%;
+    left: 66%;
+    transform: translate(-50%,-50%);
+}
+
+.top {
+    top: -10%;
+    left: 2%;
+    transform: translate(-50%,-50%);    
+}
+
+.bottom {
+    top: 20%;
+    left: 2%;
+    transform: translate(-50%,-50%);
+}
+
+
+.cell {
+    border: 0;
+    background-color: orange;
+    width: 180px;
+    height: 160px;
+    font-size: xxx-large;
+}
+
+.c1 {
+    position: absolute;
+    top: 5.8%;
+    left: 0.5%;
+}
+
+
+.c2 {
+    position: absolute;
+    top: 5.8%;
+    left: 34%;
+}
+
+.c3 {
+    position: absolute;
+    top: 5.8%;
+    left: 67%;
+}
+
+.c4 {
+    position: absolute;
+    top: 35.8%;
+    left: 0.5%;
+}
+
+.c5 {
+    position: absolute;
+    top: 35.8%;
+    left: 34%;
+}
+
+.c6 {
+    position: absolute;
+    top: 35.8%;
+    left: 67%;
+}
+
+.c7 {
+    position: absolute;
+    top: 65%;
+    left: 0.5%;
+}
+
+.c8 {
+    position: absolute;
+    top: 65%;
+    left: 34%;
+}
+
+.c9 {
+    position: absolute;
+    top: 65%;
+    left: 67%;
+}
