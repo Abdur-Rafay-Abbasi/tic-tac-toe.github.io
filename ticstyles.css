@@ -4,6 +4,8 @@ body {
 
 #intro{
     text-align: center;
+    margin: auto;
+    position: relative;
     height: 200px;
 }
 
@@ -12,16 +14,24 @@ h1 {
 }
 
 #out {
+    height: 60px;
+    padding-top: 5px;
+    border-bottom: 5px solid;
     font-size: xx-large;
 }
 
 
+.border {
+    padding-top: 20px;
+    
+}
 
 #grid {
+    text-align: center;
     margin: auto;
     position: relative;
     width: 600px;
-    height: 600px;
+    height: 850px;
     border: 4px solid;
 }
 
@@ -43,26 +53,26 @@ h1 {
 }
 
 .left {
-    top: 50%;
+    top: 65%;
     left: 32%;
     transform: translate(-50%,-50%);
 }
 
 .right {
     
-    top: 50%;
+    top: 65%;
     left: 66%;
     transform: translate(-50%,-50%);
 }
 
 .top {
-    top: -10%;
+    top: 22%;
     left: 2%;
     transform: translate(-50%,-50%);    
 }
 
 .bottom {
-    top: 20%;
+    top: 43%;
     left: 2%;
     transform: translate(-50%,-50%);
 }
@@ -78,55 +88,66 @@ h1 {
 
 .c1 {
     position: absolute;
-    top: 5.8%;
+    top: 33%;
     left: 0.5%;
 }
 
 
 .c2 {
     position: absolute;
-    top: 5.8%;
+    top: 33%;
     left: 34%;
 }
 
 .c3 {
     position: absolute;
-    top: 5.8%;
+    top: 33%;
     left: 67%;
 }
 
 .c4 {
     position: absolute;
-    top: 35.8%;
+    top: 54%;
     left: 0.5%;
 }
 
 .c5 {
     position: absolute;
-    top: 35.8%;
+    top: 54%;
     left: 34%;
 }
 
 .c6 {
     position: absolute;
-    top: 35.8%;
+    top: 54%;
     left: 67%;
 }
 
 .c7 {
     position: absolute;
-    top: 65%;
+    top: 75%;
     left: 0.5%;
 }
 
 .c8 {
     position: absolute;
-    top: 65%;
+    top: 75%;
     left: 34%;
 }
 
 .c9 {
     position: absolute;
-    top: 65%;
+    top: 75%;
     left: 67%;
+}
+
+@media (max-width: 360px){
+    body {
+        position: absolute;
+        top: -20%;
+        left: -30% ;
+        margin: auto;
+        padding: 10px;
+        transform: scale(0.6)
+    }
 }
