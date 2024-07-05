@@ -13,26 +13,47 @@ h1 {
     font-size: xxx-large;
 }
 
+#x, #o {
+    visibility: hidden;
+
+}
+
 #out {
+    visibility: hidden;
+    padding: 5px 10%;
     height: 60px;
-    padding-top: 5px;
+    
     border-bottom: 5px solid;
     font-size: xx-large;
 }
 
+#btn {
+    float: right;
+    height: 50px;
+    width: 80px;
+}
+
+strong {
+    float: left;
+}
 
 .border {
     padding-top: 20px;
     
 }
 
+#tictac {
+    border-top: 5px solid;
+}
+
 #grid {
     text-align: center;
-    margin: auto;
+    padding-top: 5px;
     position: relative;
     width: 600px;
     height: 850px;
     border: 4px solid;
+    margin: auto;
 }
 
 #vline {
