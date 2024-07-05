@@ -1,5 +1,5 @@
 body {
-    background-color: red;
+    background-color: orange;
 }
 
 #intro{
@@ -141,14 +141,15 @@ h1 {
     left: 67%;
 }
 
-@media (max-width: 360px){
-    body {
-        position: absolute;
-        top: -20%;
-        left: -30% ;
-        margin: auto;
-        padding: 10px;
-        transform: scale(0.6)
+@media (max-width: 380px){
+
+    * {
+        box-sizing: border-box;
     }
 
+    #grid { 
+        margin-top: -40%;
+        margin-left: -38%;
+        transform: scale(0.5)
+    }
 }
