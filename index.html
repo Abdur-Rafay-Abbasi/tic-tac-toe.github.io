@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>TIC-TAC-TOE</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="ticstyles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
     <body>
         <section id="grid">    
             <h1>TIC TAC TOE</h1>
             <h2>Player 1 will be X</h2>
-            <div id="out"></div>
+            <div id="out">
+                <strong id="x">X wins</strong><button id="btn"><i class='fas fa-redo'></i></button>
+                <strong id="o">O wins</strong>
+            </div>
+            <div id="tictac">
                 <button class="cell c1"></button>
                 <button class="cell c2"></button>
                 <button class="cell c3"></button>
@@ -27,5 +33,4 @@
         </section>
         <script src="tic.js"></script>    
     </body>
-</html>
 </html>
