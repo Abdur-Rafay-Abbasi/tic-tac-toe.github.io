@@ -7,7 +7,10 @@ const c6 = document.querySelector(".c6");
 const c7 = document.querySelector(".c7");
 const c8 = document.querySelector(".c8");
 const c9 = document.querySelector(".c9");
+const cell = document.querySelectorAll(".cell")
 const out = document.getElementById("out");
+const x = document.getElementById("x");
+const o = document.getElementById("o")
 
 let turn = 0;
 
@@ -34,12 +37,23 @@ const checkWin = (t) => {
     return result    
 }
 
-const endgame = () => {
+const endgame = (res) => {
+    
+    
+    if (res === "X") {
+        x.style.visibility= 'visible'
+    } else {
+       o.style.visibility = 'visible'
+    }
+
+    btn.style.visibility = 'visible'
     turn = 9
+   
+    
 }
 
 
-    document.querySelectorAll('.cell').forEach(cell => {
+    cell.forEach(cell => {
         cell.addEventListener("click", ()=> {
             if (cell.innerText == "") {
                 if (turn < 9) {
@@ -50,12 +64,10 @@ const endgame = () => {
                     }
                     if (turn >= 4) {
                     if (checkWin(turn) === "X") {
-                        out.textContent="X wins";
-                        endgame()
+                        endgame("X")
                         
                     } else if (checkWin(turn)==="O") {
-                        out.textContent = "O wins"
-                        endgame()
+                        endgame("O")
                     } 
                     }    
                     turn++
@@ -69,3 +81,16 @@ const endgame = () => {
             
         })
     })
+
+const btn = document.getElementById("btn")
+
+btn.addEventListener("click", ()=>{
+    cell.forEach(cellElement => {
+        cellElement.textContent = '';
+    });
+    x.style.visibility = 'hidden';
+    o.style.visibility = 'hidden';
+    btn.style.visibility = 'hidden';
+    turn=0
+    console.log("end")
+})
